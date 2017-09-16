@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			ul{
+				margin-top: 0px;
+				padding: 0px;
+				border: black solid 1px;
+			}
+			li{
+				
+				
+				line-height: 40px;
+				text-indent: 10px;
+				list-style: none;
+				border-bottom: dashed 1px silver;
+			}
+			h2{
+				text-indent: 15px;
+				margin-top: 0px;
+				margin-bottom: 0px;
+				height: 40px;
+				line-height: 40px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="contain">
+			<div><img src="img/pic3.jpg" alt="贵人鸟，非一般的感觉"/></div>
+			<ul>
+				<h2>祝福冬奥</h2>
+				<li>贝克汉姆：******</li>
+				<li>姚明：********</li>
+				<li>张虹：********</li>
+				<li>肖恩怀特：******</li>
+				<li>赵宏博：*******</li>
+				<li>你喜欢哪些冬季运动项目？</li>
+			</ul>
+			
+		</div>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+		<script>
+			var wish = null;
+			
+			do{
+			$("h2").css({"background":"#2a65ba","color":"#fff"})
+			wish = prompt("输入你对冬奥的祝福")
+			var $Nodes1 = $("<li>"+wish+"</li>")
+			$("ul").append($Nodes1)
+			
+			
+			
+			$("li:last").css("border-bottom","none")
+			$("li:even").css("background","orange")
+			$("li:odd").css("background","aquamarine")
+			}while(wish!=null)
+			$("img").click(function(){
+				alert($(this).attr("alt"))
+			})
+			
+		</script>
+	</body>
+</html>

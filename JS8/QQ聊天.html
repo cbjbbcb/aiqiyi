@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>QQ简易聊天框</title>
+    <link rel="stylesheet" href="css/chat.css">
+    	<style>
+    		.chatBody .img{
+    			display: inline-block;
+    			float: left;
+    			
+    		}
+    		
+    		.add{
+    			background: wheat;
+    			margin-left: 50px;
+    			width: 325px;
+    			
+    			border-radius: 10px;
+    		}
+    		
+    	</style>
+</head>
+<body>
+<section id="chat">
+    <div class="chatBody"></div>
+    <div><img src="img/icon.jpg"></div>
+    <textarea class="chatText"></textarea>
+    <div class="btn"><span id="cloth">关闭(C)</span><span id="send">发送(S)</span></div>
+</section>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+<script>
+	var headImg = new Array("<img src='img/head01.jpg'>","<img src='img/head02.jpg'>","<img src='img/head03.jpg'>")
+	var headName = new Array("Lisa","Smith","QQ")
+	$("#send").click(function(){
+		var index = Math.floor(Math.random()*3)
+		var img ="<div class='img'>"+headImg[index]+"</div>"
+		var name ="<p>"+ headName[index]+"</p>"
+		var chatStr = "<div>"+$(".chatText").val()+"</div>"
+		
+		$(".chatBody").html($(".chatBody").html()+img+name+chatStr)
+		$(".chatText").val("")
+		$(".chatBody div:last-child").addClass("add")
+	})
+	$("#cloth").click(function(){
+		window.close();
+	})
+</script>
+</body>
+</html>
