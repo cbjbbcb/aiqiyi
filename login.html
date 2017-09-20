@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="plugin/css/bootstrap.min.css" />
+		<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js "></script>
+		<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			body {
+				z-index: 0;
+			}
+			
+			#login_background {
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				background-color: rgba(128, 128, 128, 0.8);
+				z-index: 1000;
+/*				visibility: hidden;*/
+			}
+			
+			#login {
+				width: 460px;
+				height: 420px;
+				background: white;
+				position: fixed;
+				margin: auto;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				overflow: hidden;
+			}
+			
+			.login_top {
+				width: 460px;
+				height: 50px;
+				background: linear-gradient(180deg, #EBEBEB, white);
+				overflow: hidden;
+			}
+			
+			.login_top_img {
+				width: 110px;
+				height: 50px;
+				float: left;
+				background: url(img/site-icons-qyIndex_v2.png)0px -368px;
+				transform: scale(0.7);
+				position: relative;
+				bottom: 3px;
+			}
+			
+			.login_top span {
+				float: left;
+				line-height: 50px;
+				color: #77B62D;
+				font-weight: 700;
+			}
+			
+			.login_top button {
+				position: absolute;
+				right: 10px;
+				top: 10px;
+				height: 30px;
+				width: 30px;
+				border: 0;
+				background: rgba(0, 0, 0, 0);
+				color: #666;
+				border-radius: 50%;
+			}
+			
+			.login_top button:hover {
+				border-radius: 50%;
+				background: #5AA700;
+				border-radius: 50%;
+				color: white;
+			}
+			
+			.login_middle {
+				height: 316px;
+				width: 460px;
+				position: relative;
+			}
+			
+			#login_middle_right {
+				width: 152px;
+				height: 283px;
+				position: absolute;
+				top: 20px;
+				left: 164px;
+				z-index: 1;
+				animation-duration: 0.4s;
+				animation-fill-mode: forwards;
+			}
+			
+			#login_middle_left {
+				width: 232px;
+				height: 274px;
+				position: absolute;
+				top: 20px;
+				left: -232px;
+				z-index: 0;
+				animation-duration: 0.4s;
+				animation-fill-mode: forwards;
+			}
+			
+			#login_middle_right_top {
+				width: 152px;
+				height: 88px;
+				color: #A2A2A2;
+				text-align: center;
+			}
+			
+			#login_middle_right_top a {
+				color: #77B62D;
+			}
+			
+			#login_middle_right_top a:hover {
+				text-decoration: none;
+			}
+			
+			#login_middle_right_bottom {
+				width: 147px;
+				height: 147px;
+				text-align: center;
+			}
+			
+			#login_middle_right_bottom img {
+				width: 125px;
+				height: 125px;
+			}
+			
+			@keyframes toright1 {
+				from {
+					transform: translate(0);
+				}
+				to {
+					transform: translate(100px);
+				}
+			}
+			
+			@keyframes toleft1 {
+				from {
+					transform: translate(100px);
+				}
+				to {
+					transform: translate(0);
+				}
+			}
+			
+			@keyframes toright2 {
+				0 {
+					transform: translate(0);
+				}
+				50% {
+					transform: translate(300px);
+				}
+				75% {
+					transform: translate(350px);
+				}
+				100% {
+					transform: translate(300px);
+				}
+			}
+			
+			@keyframes toleft2 {
+				from {
+					opacity: 1;
+					transform: translate(300px);
+				}
+				to {
+					opacity: 0;
+					transform: translate(0);
+				}
+			}
+			
+			.login_bottom {
+				width: 460px;
+				height: 54px;
+				position: absolute;
+				bottom: 0;
+				padding: 0 20px;
+			}
+			
+			.login_bottom a {
+				line-height: 54px;
+				color: #666;
+			}
+			
+			.login_bottom a:hover {
+				color: #77B62D;
+				text-decoration: none;
+			}
+			
+			.login_bottom div {
+				float: right;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="login_background">
+			<div id="login">
+				<div class="login_top">
+					<div class="login_top_img"></div>
+					<span>手机扫码登陆</span>
+					<button class="glyphicon glyphicon-remove" onclick="closeLogin()"></button>
+				</div>
+				<div class="login_middle">
+					<div id="login_middle_right">
+						<div id="login_middle_right_top">
+							打开
+							<a href="">· 爱奇艺手机APP</a>
+							<p>扫描二维码登陆</p>
+						</div>
+						<div id="login_middle_right_bottom" onmouseenter="changeToRight()" onmouseleave="changeToleft()">
+							<img src="img/QQ图片20170920084103.png" />
+						</div>
+					</div>
+					<div id="login_middle_left">
+						<img src="img/QQ图片20170920084459.png" />
+					</div>
+				</div>
+				<div class="login_bottom">
+					<a>注册</a>
+					<div>
+						<a>账号密码登陆</a><span>|</span>
+						<a>其他登陆</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<p>······</p>
+		<p>······</p>
+		<p>······</p>
+		<p>······</p>
+		<p>······</p>
+		<p>······</p>
+		<a href="#" id="login_start" onclick="openLogin()">登陆</a>
+		
+		
+		
+		
+		
+		
+		<script>
+			/*
+			 * 登陆开与关
+			 */
+			function closeLogin() {
+				document.getElementById("login_background").style.visibility = "hidden";
+			}
+
+			function openLogin() {
+				document.getElementById("login_background").style.visibility = "visible";
+			}
+
+			/*
+			 * 鼠标事件
+			 */
+			function changeToRight() {
+				document.getElementById("login_middle_right").style.animationName = "toright1";
+				document.getElementById("login_middle_left").style.animationName = "toright2 ";
+				document.getElementById("login_middle_left").style.animationDelay = "0.4s";
+				document.getElementById("login_middle_left").style.animationDuration = "0.2s";
+
+			}
+
+			function changeToleft() {
+				document.getElementById("login_middle_right").style.animationName = "toleft1";
+				document.getElementById("login_middle_left").style.animationName = "toleft2";
+				document.getElementById("login_middle_left").style.animationDelay = "0s";
+				document.getElementById("login_middle_left").style.animationDuration = "0.4s";
+				document.getElementById("login_middle_left").style.animationTimingFunction = "ease-in";
+			}
+			
+			/*
+			 * 登陆内部界面切换
+			 */
+			//注册
+			function tozhuce(){
+				
+			}
+		</script>
+	</body>
+
+</html>
