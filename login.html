@@ -244,6 +244,73 @@
 			/*
 			中部第三层，账号密码登陆start
 			 */
+			
+			.login_middle_3 {
+				color: #AAA;
+			}
+			
+			.login_middle_3 input {
+				border: none;
+				outline: none;
+			}
+			
+			#login_middle_3_top {
+				width: 370px;
+				height: 40px;
+				border-bottom: 1px solid #DDD;
+				position: relative;
+				margin: 45px auto 30px;
+			}
+			
+			.login_middle_3 p {
+				position: relative;
+				bottom: 40px;
+			}
+			
+			#login_middle_3_top_left {
+				color: black;
+			}
+			
+			#login_middle_3_top_right {
+				position: absolute;
+				top: 0;
+				left: 80px;
+			}
+			
+			#login_middle_3_middle {
+				width: 370px;
+				height: 90px;
+				border-bottom: 1px solid #DDD;
+				margin: 40px auto;
+				position: relative;
+			}
+			
+			#login_middle_3_middle_change {
+				height: 20px;
+				width: 20px;
+				background: black;
+				position: absolute;
+				right: 0;
+				bottom: 0;
+			}
+			
+			#login_middle_3_bottom {
+				position: absolute;
+				bottom: 0;
+				width: 460px;
+				height: 110px;
+			}
+			
+			#login_middle_3_bottom input[type=submit] {
+				width: 360px;
+				height: 50px;
+				background: #BCDD98;
+				color: white;
+				text-align: center;
+				line-height: 50px;
+				position: relative;
+				left: 50px;
+			}
 			/*
 			中部第三层，账号密码登陆end
 			 */
@@ -337,26 +404,39 @@
 					</div>
 					<div class="login_middle_3">
 						<form>
-							<select>
-								<option selected="selected">中国大陆</option>
-								<option></option>
-								<option></option>
-								<option></option>
-							</select>
-							<input type="text" placeholder="请输入手机号或邮箱" />
-							<input type="text" placeholder="请输入密码" />
-							<input type="button" value="登陆" />
+							<div id="login_middle_3_top">
+								<div id="login_middle_3_top_left">
+									<select>
+										<option selected="selected">中国大陆</option>
+										<option></option>
+										<option></option>
+										<option></option>
+									</select>
+								</div>
+								<div id="login_middle_3_top_right">
+
+									<input class="login_middle_3_input" type="text" value="请输入手机号或邮箱" />
+									<p></p>
+								</div>
+							</div>
+							<div id="login_middle_3_middle">
+								<input type="text" class="login_middle_3_input" id="login_middle_3_password" value="请输入密码" />
+								<p></p>
+								<div id="login_middle_3_middle_change"></div>
+							</div>
+							<div id="login_middle_3_bottom">
+								<input type="submit" value="登陆" />
+							</div>
 						</form>
 
 					</div>
 					<div class="login_middle_4">
 						<form>
-
 							<span>点击注册即表示您同意</span>
 							<a>
 								<<爱奇艺 用户服务协议>></爱奇艺>
 							</a>
-							<input type="submit" value="z注册" />
+							<input type="submit" value="注册" />
 						</form>
 					</div>
 				</div>
@@ -473,9 +553,42 @@
 				$("#login_zhanghao").show();
 				$("#login_zhuce").hide();
 			}
-			$("#login_zhuce").click(function(){
+			$("#login_zhuce").click(function() {
 				zhuce()
 			});
+
+			//注册的输入框效果
+			//输入弹出
+			$(".login_middle_3_input").focus(function() {
+				if($(this).val() == "请输入手机号或邮箱" || $(this).val() == "请输入密码") {
+					$(this).next().text($(this).val());
+					$(this).val("");
+				}
+			})
+
+			$(".login_middle_3_input").blur(function() {
+				if($(this).val() == "") {
+					$(this).val($(this).next().text());
+					$(this).next().text("");
+
+				}
+			})
+			$("#login_middle_3_password").focus(function() {
+				if($(this).val() !== "请输入密码") {
+					$("#login_middle_3_password").attr("type", "password")
+				}
+			})
+			$("#login_middle_3_password").blur(function() {
+				if($(this).val() == "请输入密码") {
+					$("#login_middle_3_password").attr("type", "text")
+				}
+			})
+
+			//密码框改变
+			//			$("#login_middle_3_middle_change").toggle(function() {
+			//		
+			//			)
+			//密码框变色
 		</script>
 	</body>
 
