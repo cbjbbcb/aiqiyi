@@ -437,7 +437,7 @@
 				<div class="login_top">
 					<div class="login_top_img"></div>
 					<span>手机扫码登陆</span>
-					<button class="glyphicon glyphicon-remove" onclick="closeLogin()"></button>
+					<button type="button" class="glyphicon glyphicon-remove" onclick="closeLogin()"></button>
 				</div>
 				<div class="login_middle">
 					<div class="login_middle_1">
@@ -541,7 +541,7 @@
 							</div>
 							<div id="login_middle_4_bottom">
 								<span>点击注册即表示您同意</span>
-									<a href="http://www.iqiyi.com/user/register/protocol.html" target="_blank">
+								<a href="http://www.iqiyi.com/user/register/protocol.html" target="_blank">
 									<<爱奇艺 用户服务协议>></爱奇艺>
 								</a>
 								<input type="submit" value="注册" />
@@ -669,11 +669,13 @@
 			//注册的输入框效果
 			//输入弹出
 			$(".login_middle_3_input").focus(function() {
-
+					console.log($("this").val());
 				$(this).next().css({
 					"margin-bottom": "30px",
 					"font-size": "12px"
 				})
+				$(this).parent().css("border-color", "#5AA700");
+				$(this).parent().parent().css("border-color", "#5AA700");
 
 			})
 
@@ -683,8 +685,13 @@
 						"margin-bottom": "0",
 						"font-size": "16px"
 					})
+					$(this).parent().css("border-color", "#DDD");
+					$(this).parent().parent().css("border-color", "#DDD");
 				}
 			})
+	
+			
+
 			$(".login_middle_3 p").click(function() {
 				$(this).prev().focus();
 			})
@@ -703,6 +710,14 @@
 
 			})
 			//密码框变色
+//					function submitColorChange() {
+//					if($("this").val()!=="") {
+//						$(":submit").css("background", "#5AA700");
+//					} else {
+//						$(":submit").css("background", "#BCDD98");
+//					}
+//					
+//				}
 		</script>
 	</body>
 
