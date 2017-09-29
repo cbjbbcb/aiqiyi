@@ -125,10 +125,10 @@ $(".login_middle_4 p").click(function() {
 $("#login_middle_3_middle_change").click(function() {
 	if($("#login_middle_3_password").attr("type") == "password") {
 		$("#login_middle_3_password").attr("type", "text");
-		$("#login_middle_3_middle_change").css("background", "	url(img/QQ图片20170923161602.png)")
+		$("#login_middle_3_middle_change").css("background", "	url(../img/login/QQ图片20170923161602.png)")
 	} else {
 		$("#login_middle_3_password").attr("type", "password");
-		$("#login_middle_3_middle_change").css("background", "	url(img/QQ图片20170923161555.png)")
+		$("#login_middle_3_middle_change").css("background", "	url(../img/login/QQ图片20170923161555.png)")
 	}
 
 })
