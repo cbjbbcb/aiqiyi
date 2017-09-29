@@ -1,0 +1,40 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+input {
+	border: none;
+	outline: none;
+}
+
+.clearfloat:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0;
+}
+
+.clearfloat {
+	zoom: 1;
+	overflow: hidden;
+}
+
+body {
+	font: 12px "微软雅黑" arial;
+	color: #555;
+}
