@@ -46,7 +46,7 @@
 		width: 110px;
 		height: 50px;
 		float: left;
-		background: url(../img/site-icons-qyIndex_v2.png)0px -368px;
+		background: url(./img/site-icons-qyIndex_v2.png)0px -368px;
 		transform: scale(0.7);
 		position: relative;
 		bottom: 3px;
@@ -288,7 +288,7 @@
 		position: absolute;
 		right: 0;
 		bottom: 0;
-		background: url(../img/QQ图片20170923161555.png);
+		background: url(./img/QQ图片20170923161555.png);
 	}
 	
 	#login_middle_3_middle .login_middle_3_forget {
