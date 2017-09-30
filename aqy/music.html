@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--ie使用edge渲染模式-->
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport">
+<meta name="renderer" content="webkit"><!--360渲染模式-->
+<meta name="format-detection" content="telephone=notelphone=no, email=no" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="apple-touch-fullscreen" content="yes"><!-- 是否启用 WebApp 全屏模式，删除苹果默认的工具栏和菜单栏 -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色:默认值为 default，可以定为 black和 black-translucent-->
+<meta http-equiv="Cache-Control" content="no-siteapp" /><!-- 不让百度转码 -->
+<meta name="HandheldFriendly" content="true"><!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+<meta name="MobileOptimized" content="320"><!-- 微软的老式浏览器 -->
+<meta name="screen-orientation" content="portrait"><!-- uc强制竖屏 -->
+<meta name="x5-orientation" content="portrait"><!-- QQ强制竖屏 -->
+<meta name="browsermode" content="application"><!-- UC应用模式 -->
+<meta name="x5-page-mode" content="app"><!-- QQ应用模式 -->
+<meta name="msapplication-tap-highlight" content="no"><!-- windows phone 点击无高光 -->
+		<title></title>
+		<link rel="stylesheet" href="css/index.css" />
+		<style>
+			*{
+	margin: 0;
+	padding:0;
+}
+.a{
+	width: 1364px;
+	height: 70px;
+    background: #222;
+}
+.b{
+	width:1200px;
+	height: 70px;
+	margin: 0 auto;
+}
+.c{
+	width:260px;
+	height: 70px;
+	float: left;
+}
+.d{
+	width:512px;
+	height: 70px;
+	float: left;
+}
+.e{
+	width:415px;
+	height: 70px;
+	float: right;
+	
+}
+.e ul li:hover{
+	color: yellowgreen;
+}
+.d1{
+	width: 300px;
+	height: 36px;
+	color: black;
+	margin-left: 34px;
+	margin-top: 14px;
+	line-height: 37px;
+}
+.d2{
+	width: 100px;
+	height: 36px;
+	margin-left: 330px;
+	margin-top: -36px;
+    float: left;
+}
+.e ul{
+	margin-top: 18px;
+	margin-left: 10px;
+}
+.e li{
+	float: left;
+	list-style: none;
+	font-size: 15px;
+	display: inline-block;
+	padding: 5px;
+	color: gainsboro;
+	
+}
+.picture{
+	width: 20px;
+	height: 25px;
+	margin-top: 1px;
+	margin-left: 8px;
+}
+.biao{
+	margin-top: -27px;
+	margin-left: 33px;
+	width: 114px;
+	height: 25px;
+
+	
+}
+.biao li{
+	font-size: 10px;
+	color: #010101;
+}
+.picture1{
+	width: 20px;
+	height: 25px;
+	margin-top: 15px;
+	margin-left: 8px;
+}
+.picture2{
+	width: 25px;
+	height: 19px;
+	margin-top: 15px;
+	margin-left: 8px;
+	
+}
+.picture3{
+	width: 25px;
+	height: 25px;
+	margin-top: 15px;
+	margin-left: 8px;
+	
+}
+.picture4{
+	width: 73px;
+	height: 30px;
+	border-radius: 6px;
+	color: white;
+	background: green;
+	text-align: center;
+	line-height: 29px;
+	margin-left: 44px;
+	margin-top: 19px;
+}
+.shangchuan1{
+	width:158px ;
+	height: 207px;
+	position: absolute;
+	top: 52px;
+	right: 185px;
+	color: #000000;
+	background: white;
+	z-index: 10;
+	border-radius: 5px;
+	display: none;
+}
+.wenjian{
+	width: 77px;
+	height: 180px;
+	background: white;
+	position: absolute;
+	z-index: 10;
+	right: 285px;
+	top: 70px;
+	border-radius: 5px;
+	display: none;
+}
+.wenjian ul li{
+	font-size: 10px;
+	color: #000000;
+}
+.dhz{
+	width: 100%;
+	height: 550px;
+	border: 1px solid red;
+}
+.yyb{
+	width: 1200px;
+	height: 43px;
+	border-bottom: 1px solid #e0e0e0;
+	margin: 0 auto;
+}
+.green{
+	margin-top: 36px;
+	color: #699f00;
+	
+}
+.ay{
+	font-size: 26px;
+	margin-left: 20px;
+	margin-top: -29px;
+}
+.gengduo{
+	font-size: 13px;
+	margin-left: 187px;
+	margin-top: -21px;
+}
+.chan{
+	width: 250px;
+	height: 30px;
+	margin-left: 330px;
+	margin-top: -20px;
+	line-height: 30px;
+	
+}
+.chan ul li{
+	width: 49px;
+	float: left;
+	list-style: none;
+	font-size: 13px;
+}
+.chan ul li:hover{
+	color:#699f00;
+}
+.bbox{
+	width: 1200px;
+	height: 350px;
+	
+	margin: 0 auto;
+}
+.bbox1{
+	width: 390px;
+	height: 330px;
+	
+	line-height: 335px;
+	margin-top: 10px;
+}
+.bbox2{
+	width: 165px;
+	height: 142px;
+	
+	margin-left: 425px;
+	margin-top: -328px;
+	}
+	.bbox3{
+	width: 165px;
+	height: 142px;
+	
+	margin-left: 616px;
+	margin-top: -141px;
+	}
+	.bbox4{
+	width: 165px;
+	height: 142px;
+	
+	margin-left: 807px;
+	margin-top: -141px;
+	}
+	.bbox5{
+	width: 165px;
+	height: 142px;
+	
+	margin-left: 1006px;
+	margin-top: -141px;
+	}
+	.bbox7{
+	width: 165px;
+	height: 142px;
+	
+	margin-left: 425px;
+	margin-top: 28px;
+	}
+	.bbox8{
+	width: 165px;
+	height: 142px;
+	margin-left: 616px;
+	margin-top: -142px;
+	}
+	.bbox9{
+	width: 165px;
+	height: 142px;
+	margin-left: 809px;
+	margin-top: -142px;
+	}
+	.bbox10{
+	width: 165px;
+	height: 142px;
+	margin-left: 1009px;
+	margin-top: -142px;
+	}
+	.cch{
+	width: 1200px;
+	height: 350px;
+	
+	margin: 0 auto;
+}
+.chan1{
+	width: 500px;
+	height: 30px;
+	margin-left: 330px;
+	margin-top: -20px;
+	line-height: 30px;
+	
+}
+.chan1 ul li{
+	width: 130px;
+	float: left;
+	list-style: none;
+	font-size: 13px;
+}
+.chan1 ul li:hover{
+	color:#699f00;
+}
+.tt1{
+	width: 1200px;
+	height: 172px;
+	
+	margin: 0 auto;
+	margin-top: 25px;
+}
+.yyb1{
+	width: 1200px;
+	height: 43px;
+	border-bottom: 2px solid #699f00;
+	margin: 0 auto;
+}
+.ay1{
+	font-size: 26px;
+	margin-left: 20px;
+	margin-top: -29px;
+}
+.tt2{
+	width: 1200px;
+	height: 348px;
+	
+	margin: 0 auto;
+	margin-top: 25px;
+}
+.tt3{
+	width: 1200px;
+	height: 295px;
+	
+	margin: 0 auto;
+	margin-top: 25px;
+}
+	.box {
+				width: 1200px;
+				height: 162px;
+				background: #f2f2f2;
+				margin: 0 auto;
+			    margin-top: 28px;;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+			}
+			
+			.box1 {
+				width: 1200px;
+				height: 60px;
+				margin: 0 auto;
+			}
+			
+			.box2 {
+				margin-left: 78px;
+				margin-top: -51px;
+			}
+			
+			.box3 {
+				width: 1200px;
+				height: 145px;
+				/*border-bottom: 1px dashed gainsboro;*/
+				margin: 0 auto;
+			}
+			
+			.box4 {
+				width: 80px;
+				height: 80px;
+				margin-left: 17px;
+				display: block;
+				border: 1px solid lightgray;
+				text-align: center;
+				position: relative;
+				margin-top: 35px;
+				
+			}
+			
+			.box4 a {
+				text-decoration: none;
+			}
+			.box4 a:hover{
+				color: yellowgreen;
+			}
+			ul{
+				float: left;
+				
+			}
+			ul li{
+				float: left;
+				list-style: none;
+				font-size: 13px;
+				
+			}
+			.box5{
+				float: left;
+				width: 90px;
+				height: 145px;
+				
+				line-height: 30px;
+				margin-top: 10px;
+				margin-left: 28px;
+			}
+			.box5 ul{
+				float: left;
+				text-align: center;
+			}
+			.box5 li{
+				float: left;
+				list-style: none;
+				font-size: 10px;
+			}
+			.box5 li:hover{
+				color: yellowgreen;
+			}
+			.box6{
+				width: 1200px;
+				height: 30px;
+			
+				margin: 0 auto;
+				margin-top: 50px;
+				font-size: 2px;
+			
+		
+			}
+			.box6 p{
+			    margin-top: 8px;
+				float: right;
+				color: grey;
+			}
+			.box7{
+				width: 1500px;
+				margin-left: -80px;
+				border-bottom: 1px solid grey;
+			}
+			.box8{
+				width: 800px;
+				height: 50px;
+				margin: 0 auto;
+				line-height: 50px;
+				
+			}
+			.box8 ul{
+			
+				vertical-align: middle;
+				
+			}
+			.box8 ul li{
+				font-size: 10px;
+				margin-left: 12px;
+			
+			}
+			.box8 ul li:hover{
+				color: yellowgreen;
+			}
+			.box9{
+				width: 400px;
+				height: 50px;
+				margin: 0 auto;
+				
+				line-height: 50px;
+			}
+			.box9 ul{
+			margin-left: 50px;
+				vertical-align: middle;
+				
+			}
+			.box9 ul li{
+				font-size: 10px;
+				margin-left: 9px;
+			color: grey;
+			}
+			.box9 ul .aa{
+				text-decoration: none;
+			}
+			.box9 ul .aa:hover{
+				color: yellowgreen;
+			}
+			.ttt{
+	             width: 984px;
+	             height: 172px;
+	             
+	            margin-left: 76px;
+	             margin-top: 25px;
+}
+.tttt{
+	            
+	             
+	             margin-left: 1081px;
+	             margin-top: -172px;
+}
+		</style>
+	</head>
+	<body>
+		<div class="a">
+			<div class="b">
+				<div class="c">
+					<img src="img/a.png" />
+				</div>
+				<div class="d">
+					<input class="d1" type="search" placeholder="那年花开月正圆">
+					<input class="d2" type="image" src="img/c.png">
+				</div>
+				<div class="e">
+					<ul>
+						<li>登录</li>
+						<li>注册</li>
+						<li>开通VIP</li>
+						<li>
+							<div class="cc">上传</div>
+
+							<div class="wenjian">
+								<ul class="ul">
+									<li>上传视频</li>
+									<li>视频制作</li>
+									<li>我的空间</li>
+									<li>视频管理</li>
+									<li>播放数据</li>
+									<li>申请分成</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="shangchuan">下载客户端
+								<ul class="shangchuan1">
+									<div>
+										<div class="picture"></div>
+										<div class="biao">
+											<li>签到免广告，送VIP</li>
+										</div>
+									</div>
+									<div>
+										<div class="picture1"></div>
+										<div class="biao">
+											<li>5倍流畅度，不卡顿</li>
+										</div>
+									</div>
+									<div>
+										<div class="picture2"></div>
+										<div class="biao">
+											<li>1080P免费畅享</li>
+										</div>
+									</div>
+									<div>
+										<div class="picture3"></div>
+										<div class="biao">
+											<li>搜不到视频，送VIP</li>
+										</div>
+									</div>
+									<div class="picture4">立即体验</div>
+								</ul>
+							</div>
+						</li>
+						<li>消息</li>
+						<li>播放记录</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="js-silder">
+   <div class="silder-scroll">
+		<div class="silder-main">
+			<div class="silder-main-img">
+				<img src="img/a-1.jpg" alt="">
+			</div>
+			<div class="silder-main-img">
+				<img src="img/a-2.jpg" alt="">
+			</div>
+			<div class="silder-main-img">
+				<img src="img/a-3.jpg" alt="">
+			</div>
+			<div class="silder-main-img">
+				<img src="img/a-4.jpg" alt="">
+			</div>
+			<div class="silder-main-img">
+				<img src="img/a-5.jpg" alt="">
+			</div>
+			<div class="silder-main-img">
+				<img src="img/a-6.jpg" alt="">
+			</div>
+			<div class="silder-main-img">
+				<img src="img/a-7.jpg" alt="">
+			</div>
+			<div class="silder-main-img">
+				<img src="img/a-8.jpg" alt="">
+			</div>
+			<div class="silder-main-img">
+				<img src="img/a-9.jpg" alt="">
+			</div>
+			<div class="silder-main-img">
+				<img src="img/a-10.jpg" alt="">
+			</div>
+			<div class="silder-main-img">
+				<img src="img/a-11.jpg" alt="">
+			</div>
+			<div class="silder-main-img">
+				<img src="img/a-12.jpg" alt="">
+			</div>
+		</div>
+	</div>
+</div>
+        <div class="yyb">
+        	<div class="green"><img src="img/green.png" /><div class="ay">爱奇艺音乐榜</div><div class="gengduo">更多 ></div></div>
+        	<div class="chan">
+        		<ul>
+        			<li>总榜</li>
+        			<li>华语</li>
+        			<li>欧美</li>
+        			<li>韩语</li>
+        			<li>日语</li>
+        		</ul>
+        	</div>
+        </div>
+        <div class="bbox">
+        	<div class="bbox1"><img src="img/bbox1.png" /></div>
+        	<div class="bbox2"><img src="img/bbox2.png" /></div>
+        	<div class="bbox3"><img src="img/bbox3.png" /></div>
+        	<div class="bbox4"><img src="img/bbox4.png" /></div>
+        	<div class="bbox5"><img src="img/bbox5.png" /></div>
+        	<div class="bbox7"><img src="img/bbox7.png" /></div>
+        	<div class="bbox8"><img src="img/bbox8.png" /></div>
+        	<div class="bbox9"><img src="img/bbox9.png" /></div>
+        	<div class="bbox10"><img src="img/bbox10.png" /></div>
+        </div>
+        <div class="yyb">
+        	<div class="green"><img src="img/green.png" /><div class="ay">爱奇首播MV</div><div class="gengduo">更多 ></div></div>
+        	<div class="chan">
+        		<ul>
+        			<li>总榜</li>
+        			<li>华语</li>
+        			<li>欧美</li>
+        			<li>韩语</li>
+        			<li>日语</li>
+        		</ul>
+        	</div>
+        </div>
+        <div class="cch">
+        	<div class="bbox1"><img src="img/cc1.png" /></div>
+        	<div class="bbox2"><img src="img/cc2.png" /></div>
+        	<div class="bbox3"><img src="img/cc3.png" /></div>
+        	<div class="bbox4"><img src="img/cc4.png" /></div>
+        	<div class="bbox5"><img src="img/cc5.png" /></div>
+        	<div class="bbox7"><img src="img/cc6.png" /></div>
+        	<div class="bbox8"><img src="img/cc7.png" /></div>
+        	<div class="bbox9"><img src="img/cc8.png" /></div>
+        	<div class="bbox10"><img src="img/cc9.png" /></div>
+        </div>
+         <div class="yyb1">
+        	<div class="green"><img src="img/green.png" /><div class="ay">猜你喜欢</div><div class="gengduo">更多 ></div></div>
+        	<div class="chan1">
+        		<ul>
+        			<li>我的播放记录  /</li>
+        			<li>我的收藏  /</li>
+        			<li>我的上传</li>
+        		</ul>
+        	</div>
+        </div>
+        <div class="ttt"><img src="img/tt1.png" /></div>
+        <div class="tttt"><a href="https://cbjbbcb.github.io/aiqiyi/my_aiqiyi/login"><img src="img/tttt.png" /></a></div>
+        <div class="yyb1">
+        	<div class="green"><img src="img/green.png" /><div class="ay">音乐大事件</div></div>
+        </div>
+        <div class="tt1"><img src="img/tt2.png" /></div>
+        <div class="yyb1">
+        	<div class="green"><img src="img/green.png" /><div class="ay">最佳现场</div><div class="gengduo">更多 ></div></div>
+        	
+        </div>
+        <div class="tt2"><img src="img/tt3.png" /></div>
+        <div class="yyb1">
+        	<div class="green"><img src="img/green.png" /><div class="ay">爱奇艺音乐榜.爱榜聚焦</div></div>
+        </div>
+        <div class="tt3"><img src="img/tt4.png" /></div>
+        <div class="yyb1">
+        	<div class="green"><img src="img/green.png" /><div class="ay">音乐热点</div></div>
+        </div>
+        <div class="tt3"><img src="img/tt5.png" /></div>
+        <div class="yyb1">
+        	<div class="green"><img src="img/green.png" /><div class="ay">热播MV</div></div>
+        	
+        </div>
+        <div class="tt2"><img src="img/tt6.png" /></div>
+        <div class="yyb1">
+        	<div class="green"><img src="img/green.png" /><div class="ay">最热艺人</div></div>
+        </div>
+        <div class="tt3"><img src="img/tt7.png" /></div>
+        <div class="yyb1">
+        	<div class="green"><img src="img/green.png" /><div class="ay">音乐达人</div></div>
+        </div>
+        <div class="tt1"><img src="img/tt8.png" /></div>
+        <div class="yyb1">
+        	<div class="green"><img src="img/green.png" /><div class="ay">古典音乐</div></div>
+        </div>
+        <div class="tt1"><img src="img/tt9.png" /></div>
+        <div class="yyb1">
+        	<div class="green"><img src="img/green.png" /><div class="ay">合作专区</div></div>
+        </div>
+        <div class="tt1"><img src="img/tt10.png" /></div>
+        <div class="yyb1">
+        	<div class="green"><img src="img/green.png" /><div class="ay">合作伙伴</div></div>
+        </div>
+        <!--<div class="box1"><img src="img/ww.png" />
+			<h2 class="box2">合作伙伴</h2></div>-->
+		<div class="box">
+			<div class="box3">
+				<ul>
+					<li>
+						<div class="box4"><img src="img/hhhh1.jpg" />
+							<a href="">环球</a>
+						</div>
+					</li>
+					<li>
+						<div class="box4"><img src="img/hhhh2.jpg" width="80px" height="80px" />
+							<a href="">S.M.</a>
+						</div>
+					</li>
+					<li>
+						<div class="box4"><img src="img/hhhh3.jpg" />
+							<a href="">英皇娱乐</a>
+						</div>
+					</li>
+					<li>
+						<div class="box4"><img src="img/hhhh4.jpg" />
+							<a href="">LOEN Entertainment</a>
+						</div>
+					</li>
+					<li>
+						<div class="box4"><img src="img/hhhh5.jpg" />
+							<a href="">福茂唱片</a>
+						</div>
+						</li>
+						<li>
+						<div class="box4"><img src="img/hhhh6.jpg" />
+							<a href="">永乐票务</a>
+						</div>
+					</li>
+					<!--<li>
+						<div class="box4"><img src="img/7650caa86041d4ee2d443f7ae93f0c9c_3cc82e23520843ceb929bf2724e07cec.jpg" />
+							<a href="">百度动漫</a>
+						</div>
+						</li>
+						<li>
+						<div class="box4"><img src="img/540e8e83aab562f66ebfded12bb7f706_ad51febbdf0d495a98441ae00b9e8d6c.jpg" />
+							<a href="">漫域</a>
+						</div>
+						</li>
+						<li>
+						<div class="box4"><img src="img/22b06df4abf925d3a6d09a427c3ffa23_4674a8d86ffd40cd854f054ff9f908f4.jpg" />
+							<a href="">圣斗士A4S</a>
+						</div>
+						</li>
+						<li>
+						<div class="box4"><img src="img/f18fdcc9f04132f95b252437d63e71ea_2e5ac59b334948fcb64b3b5683b2b6d9.jpg" />
+							<a href="">漫漫看</a>
+						</div>
+						</li>
+						<li>
+						<div class="box4"><img src="img/14a16ee517e45d1c5525e554ee52c420_22427a5f547844179415f8015a219c54.jpg" />
+							<a href="">！尚漫</a>
+						</div>
+						</li>
+						<li>
+						<div class="box4"><img src="img/77c6ab84dab6347b91863df31ea07991_152a6e24ea0849dd99638db963e7eca4.jpg" />
+							<a href="">杭州友诺</a>
+						</div>
+						</li>-->
+				</ul>
+			</div>
+			<!--<div class="box5">
+				<ul>
+					<li>啪嗒动漫</li>
+					<li>漫域网</li>
+					<li>洒洒动漫网 </li>
+					<li>114啦动漫大全</li>
+					<li>起跑线儿歌</li>
+				</ul>
+			</div>
+			<div class="box5">
+				<ul>
+					<li>迅雷看看动漫</li>
+					<li>游戏狗</li>
+					<li>井上雄彦 </li>
+					<li>淘米动画片</li>
+					<li>漫布星球</li>
+				</ul>
+			</div>
+			<div class="box5">
+				<ul>
+					<li>有趣岛</li>
+					<li>cosplay</li>
+					<li>儿歌视频大全 </li>
+					<li>泡泡酷动漫</li>
+					<li>178动漫频道</li>
+				</ul>
+			</div>
+			<div class="box5">
+				<ul>
+					<li>百度视频动漫</li>
+					<li>i尚漫原创漫画</li>
+					<li>中国动漫产业网 </li>
+					<li>动画片大全</li>
+					<li>武动乾坤漫画</li>
+				</ul>
+			</div>
+			<div class="box5">
+				<ul>
+					<li>41717漫画网</li>
+					<li>大漫网</li>
+					<li>圣斗士热血传说 </li>
+					<li>2345动漫</li>
+				</ul>
+			</div>
+			<div class="box5">
+				<ul>
+					<li>火影忍者中文</li>
+					<li>嘟嘟动漫网</li>
+					<li>爱你妹动漫点评 </li>
+					<li>动漫之家</li>
+				</ul>
+			</div>
+			<div class="box5">
+				<ul>
+					<li>YACA动漫</li>
+					<li>漫漫看</li>
+					<li>杭州友诺 </li>
+					<li>巴士单机游戏</li>
+				</ul>
+			</div>
+			<div class="box5">
+				<ul>
+					<li>动画片大全</li>
+					<li>TVB卡通</li>
+					<li>动漫星空 </li>
+					<li>亲宝儿歌</li>
+				</ul>
+			</div>
+			<div class="box5">
+				<ul>
+					<li>漫客栈</li>
+					<li>7k7k动画</li>
+					<li>顺网动漫频道 </li>
+					<li>儿歌视频大全</li>
+				</ul>
+			</div>
+			<div class="box5">
+				<ul>
+					<li>3366动画</li>
+					<li>中国漫画家</li>
+					<li>二次元小窝 </li>
+					<li>原创动漫</li>
+				</ul>
+			</div>
+		</div>-->
+		<div class="box6"><p>责任编辑：王丁 AK014</p></div>
+		<div class="box7"></div>
+		<div class="box8">
+			<ul>
+				<li>公司介绍   |</li>
+				<li>新闻动态   |</li>
+				<li>联系方式   |</li>
+				<li>招聘英才   |</li>
+				<li>爱奇艺实验室   |</li>
+				<li>开放平台   |</li>
+				<li>爱奇艺号认证   |</li>
+				<li>爱奇艺号   |</li>
+				<li>帮助中心   |</li>
+				<li>侵权投诉   |</li>
+				<li>About Us</li>
+			</ul>
+		</div>
+		<div class="box9">
+			<ul>
+			<li>Copyright © 2017 </li>
+			<li class="aa">爱奇艺</li>
+			<li> All Rights Reserved</li>
+			</ul>
+		</div>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+        <script src="js/wySilder.min.js" type="text/javascript"></script>
+		<script>
+			$(".shangchuan").hover(function() {
+				$(".shangchuan1").show();
+
+			}, function() {
+				$(".shangchuan1").hide();
+			});
+			$(".cc").click(function() {
+				$(".wenjian").slideToggle();
+			});
+			$(".wenjian").dblclick(function() {
+				$(".cc").click();
+			});
+			$(function (){
+		$(".js-silder").silder({
+			auto: true,//自动播放，传入任何可以转化为true的值都会自动轮播
+			speed: 20,//轮播图运动速度
+			sideCtrl: true,//是否需要侧边控制按钮
+			bottomCtrl: true,//是否需要底部控制按钮
+			defaultView: 0,//默认显示的索引
+			interval: 3000,//自动轮播的时间，以毫秒为单位，默认3000毫秒
+			activeClass: "active",//小的控制按钮激活的样式，不包括作用两边，默认active
+		});
+	});
+			</script>
+			
+			
+
+
+	</body>
+</html>
