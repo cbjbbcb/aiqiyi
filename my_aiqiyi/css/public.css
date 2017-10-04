@@ -26,7 +26,15 @@ a:hover {
 	cursor: pointer;
 	
 }
-
+a:active{
+	text-decoration: none;
+}
+a:visited{
+	text-decoration: none;
+}
+a:focus{
+	text-decoration: none;
+}
 img {
 	border: none;
 	vertical-align: middle;

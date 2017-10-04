@@ -1,4 +1,5 @@
 $(function() {
+	//导航三
 	$(".nav3 li").mouseenter(function() {
 		$(this).find("p").show("300");
 		$(this).find(".nav3_cover").css("background", "rgba(0,0,0,0.2)")
@@ -49,6 +50,24 @@ $(function() {
 			"left": nav4LeftLength + "px"
 		}, 300);
 
+	})
+
+	//订阅
+	$(".section_type3 ul li a:last-child").click(function() {
+		if($(this).text() == "+订阅") {
+			$(this).text("已订阅");
+			$(this).bind({
+				"mouseover": function() {
+					$(this).text("取消订阅");
+				},
+				"mouseout": function() {
+					$(this).text("已订阅");
+				}
+			})
+		} else {
+			$(this).unbind();
+			$(this).text("+订阅");
+		}
 	})
 })
 
