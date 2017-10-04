@@ -322,6 +322,23 @@
  	width: 200px;
  	height: 139px;
  }
+ 
+ #enter_personal {
+ 	text-align: center;
+ 	background: #85BA4D;
+ }
+ 
+ #enter_personal:hover {
+ 	background: #6DAC2A;
+ }
+ 
+ #enter_personal h3 {
+ 	color: #fff;
+ 	font-size: 22px;
+ 	line-height: 101px;
+ 	margin: 0;
+ 	padding: 0;
+ }
  /*********************************************************主体内容1，精品策划结束**********************************/
  
  .life_more {
@@ -499,9 +516,11 @@
  #jujia .section_type4_right_bottom ul li {
  	background: #FFF4EA;
  }
-  #jujia .section_type4_right_bottom ul li i{
-  	    background-position: -40px -1120px;
-  }
+ 
+ #jujia .section_type4_right_bottom ul li i {
+ 	background-position: -40px -1120px;
+ }
+ 
  #jujia .section_type4_right_bottom ul li a:hover {
  	color: #f99;
  }
@@ -566,31 +585,30 @@
  	right: 0;
  }
  /*******************************************主体*****萌宠当家结束******************************************************/
-
+ 
  #remen .section_type4_right_bottom ul li {
  	background: #EEF7E4;
  }
-  #remen .section_type4_right_bottom ul li i{
-  	    background-position: -80px -1120px;
-  }
+ 
+ #remen .section_type4_right_bottom ul li i {
+ 	background-position: -80px -1120px;
+ }
+ 
  #remen .section_type4_right_bottom ul li a:hover {
- 	color:  #83bb45;
+ 	color: #83bb45;
  }
  
  #remen .section_type4_right_bottom ul li:first-child {
- 	background:  #83bb45;
+ 	background: #83bb45;
  }
  /*******************************************主体*****热门节目结束******************************************************/
-
-
  /*******************************************主体*****美尚课堂结束******************************************************/
-.section_type5{
-	margin: 40px auto;
-	width: 1200px;
-}
-
- /*******************************************主体*****生活原创结束******************************************************/
  
+ .section_type5 {
+ 	margin: 40px auto;
+ 	width: 1200px;
+ }
+ /*******************************************主体*****生活原创结束******************************************************/
  /*页脚
  */
  
