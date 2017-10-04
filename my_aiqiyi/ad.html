@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="plugin/css/bootstrap.min.css" />
+		<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js "></script>
+		<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+		<style>
+			.ad_top {
+				background: #8ac024;
+				width: 84px;
+				color: #fff;
+				font-size: 12px;
+				text-align: center;
+				line-height: 22px;
+				border-radius: 4px 4px 0 0;
+			}
+		
+			.ad_container {
+				user-select: none;
+				padding: 10px 1px;
+				width: 1184px;
+				height: 162px;
+				border: 1px solid #8ac024;
+				position: relative;
+				overflow: hidden;
+			}
+			
+			.ad_container_left {
+				position: absolute;
+				left: 4px;
+				background: url(http://stc.qiyipic.com/common/20150527/arrow-left.png) no-repeat 50%;
+			}
+			
+			.ad_container_center {
+				width: 1120px;
+				height: 140px;
+				overflow: hidden;
+				margin: 0 auto;
+			}
+			
+			.ad_container_right {
+				position: absolute;
+				right: 4px;
+				background: url(http://stc.qiyipic.com/common/20150527/arrow-right.png) no-repeat 50%;
+			}
+			
+			.ad_each_container {
+				width: 5000px;
+				height: 170px;
+				margin-left: -10px;
+				display: inline-block;
+				line-height: 0;
+				position: relative;
+			}
+			
+			.ad_each {
+				transition: all 2s;
+			}
+			
+			.ad_show {
+				float: left;
+				width: 170px;
+				margin: 0 20px;
+			}
+			
+			.ad_show:first-child {
+				width: 170px;
+				height: 100px;
+			}
+			
+			.ad_show:last-child {
+				width: 170px;
+				height: 40px;
+			}
+			
+			.ad_hidden {
+				margin-left: 20px;
+				width: 740px;
+				position: absolute;
+				left: 190px;
+				transition: width;
+				display: none;
+			}
+			
+			.ad_each:hover {
+				position: absolute;
+				left: 0;
+			}
+			
+			.ad_each:hover .ad_hidden {
+				display: block;
+			}
+			
+			@keyframes change{
+				0% {
+					width: 0;
+				}
+				25% {
+					width: 185px;
+				}
+				50% {
+					width: 370px;
+				}
+				75% {
+					width: 555px;
+				}
+				100% {
+					width: 740px;
+				}
+			}
+				#login_background {
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				background-color:rgba(128,128,128,0.4);
+				z-index: 10000;
+			}
+		</style>
+	</head>
+
+	<body>
+			<div id="login_background">
+
+		</div>
+		<div class="ad_top">推广广告</div>
+		<div class="ad_container">
+			<div class="ad_container_left"></div>
+			<div class="ad_container_center">
+				<div class="ad_each_container">
+					<a href="http://t.cr-nielsen.com/hat?_t=r&amp;type=clk&amp;hat_id=MTM3JjI0MiY4MTAwNDU5NCYxMTMwODgxJjMyMDYxNzI5JoA1&amp;_l=aHR0cDovL3d3dy5pcWl5aS5jb20vbWFya2V0aW5nL3lvcmtrdC5odG1s&amp;_z=m&amp;rnd=10448395" target="_blank">
+						<div class="ad_each">
+							<div class="ad_show"> <img src="http://pic3.qiyipic.com/common/20170914/5a74b50798ce4f98a1a9eaf86f319482.jpg" /> <img src="http://pic0.qiyipic.com/common/20170914/b372bb85dce648eab434f4858e60770d.jpg" /> </div>
+							<div class="ad_hidden"><img src="http://pic3.qiyipic.com/common/20170915/8417182828b041848c9a4b3ae719362b.jpg" /></div>
+						</div>
+					</a>
+					<a href="http://clickc.admaster.com.cn/c/a79494,b1448405,c1118,i0,m101,8a1,8b2,0i__IESID__,h" target="_blank">
+						<div class="ad_each">
+							<div class="ad_show"> <img src="http://pic2.qiyipic.com/common/20161207/ab7c390e1624424cb9f6477bfa1d475c.jpg" /> <img src="http://pic4.qiyipic.com/common/20161207/877e396f2f04439a8edce95704c7ef53.jpg" /></div>
+							<div class="ad_hidden"><img src="http://pic7.qiyipic.com/common/20161207/d41ebcb4ce354bea9f3cfe8945e5db89.jpg" /></div>
+						</div>
+					</a>
+					<a href="http://t.cr-nielsen.com/hat?_t=r&amp;type=clk&amp;hat_id=MTM3JjI0MiY4MTAwNDU5NCYxMTI5NjQwJjMyMDQwNzc5JnLS&amp;_l=aHR0cDovL3d3dy5pcWl5aS5jb20vbWFya2V0aW5nL3ZpcHp0Lmh0bWw=&amp;_z=m&amp;OS=__OS__&amp;IMEI=__UDID__&amp;MAC=__UDID__&amp;IDFA=__UDID__&amp;OpenUDID=__UDID__&amp;AndroidID=__UDID__&amp;rnd=35244603" target="_blank">
+						<div class="ad_each" ">
+						<div class="ad_show "> <img src="http://pic2.qiyipic.com/common/20170816/344fd871ccaf40d1aec5dc634c454f3a.jpg " /> <img src="http://pic0.qiyipic.com/common/20170816/50936d9bb3dd4244a20ecf2e617e262a.jpg " /></div>
+						<div class="ad_hidden "><img src="http://pic8.qiyipic.com/common/20170816/00eb8c85a4dc45d1a82a8c69bd2ed75c.jpg " /></div>
+					</div>
+				</a>
+				<a href="http://t.cr-nielsen.com/hat?_t=r&amp;type=clk&amp;hat_id=MTM3JjI0MiY4MTAwMTYxMSYxMTI4NjgwJjMxOTk3MTk2Jr8k&amp;_l=aHR0cDovL3d3dy5pcWl5aS5jb20vbWFya2V0aW5nL2ppYXlvdXhpYW5nd2VpbGFpMi5odG1s&amp;_z=m&amp;OS=__OS__&amp;IMEI=__UDID__&amp;MAC=__UDID__&amp;IDFA=__UDID__&amp;OpenUDID=__UDID__&amp;AndroidID=__UDID__&amp;rnd=90733417 " target="_blank " >
+					<div class="ad_each "">
+							<div class="ad_show"> <img src="http://pic3.qiyipic.com/common/20170721/4b07a9ebad52420b900ae0ec8516775d.jpg" /> <img src="http://pic3.qiyipic.com/common/20170721/5c47233e589b4ab48f73d649fed6f07b.jpg" /></div>
+							<div class="ad_hidden"><img src="http://pic2.qiyipic.com/common/20170721/21bcd594b3024523b4d8602d705e36c6.jpg" /></div>
+						</div>
+					</a>
+					<a href="http://t.cr-nielsen.com/hat?_t=r&amp;type=clk&amp;hat_id=MTM3JjI0MiY4MTAwNTYyNiYxMTI5ODgzJjMyMDU4MDA5JjnU&amp;_l=aHR0cDovL3d3dy5pcWl5aS5jb20vbWFya2V0aW5nL1N0YXJidWNrc21vb25jYWtlLmh0bWw=&amp;_z=m&amp;OS=__OS__&amp;IMEI=__IMEI__&amp;MAC=__MAC__&amp;IDFA=__IDFA__&amp;OPENUDID=__OPENUDID__&amp;ANDROIDID=__ANDROIDID__&amp;rnd=73686032" target="_blank">
+						<div class="ad_each" ">
+						<div class="ad_show "> <img src="http://pic2.qiyipic.com/common/20170905/f90cfd8d7d274517bf31a6dbc0dccb99.jpg " /> <img src="http://pic5.qiyipic.com/common/20170905/a4bc7276bddf46b78fbc638f3a6826f3.jpg " /> </div>
+						<div class="ad_hidden "><img src="http://pic6.qiyipic.com/common/20170905/b0ce08f21fd049599945034601b626e8.jpg " /></div>
+					</div>
+				</a>
+			</div>
+			</div>
+				<div class="ad_container_right "></div>
+		</div>
+	
+	</body>
+
+</html>
