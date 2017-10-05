@@ -65,7 +65,8 @@ $(function() {
 				}
 			})
 		} else {
-			$(this).unbind();
+			$(this).unbind("mouseover");
+			$(this).unbind("mouseout");
 			$(this).text("+订阅");
 		}
 	})
