@@ -119,10 +119,12 @@
 			}
 			.b1 ul{}
 			.b1 li{
+				width: 100%;
 				height: 40px;
 				line-height: 40px;
 				font-size: 14px;
 				border-bottom: 1px dashed #ccc;
+				position: relative;
 			}
 			.b1 li:last-child{
 				border: none;
@@ -133,20 +135,29 @@
 				padding-top: 10px;
 				padding-left: 10px;
 				box-sizing: border-box;
-				position: relative;
+				
 			}
-			.b1 li:first-child img{
+			.b1 li .list1 img{
 				width: 140px;
 				height: 79px;
 				float: left;
-				
+			
 			}
-			.b1 li:first-child .num_icon{
+			.b1 li .list1{
+				display:none ;
+			}
+			.b1 li:first-child .list1{
+				display: block;
+			}
+			.b1 li:first-child .list2{
+				display:none ;
+			}
+			.b1 li .list1 .num_icon{
 				position: absolute;
 				top: 11px;
 				left: 1px;
 			}
-			.b1 li:first-child .img_content{
+			.b1 li .list1 .img_content{
 				width: 100px;
 				height: 75px;
 				float: left;
@@ -164,7 +175,7 @@
 				margin-right: 6px;
 				margin-top: 15px;
 			}
-			.b1 li:first-child p{
+			.b1 li .list1 p{
 				background: url(img/icon-fyb-index.png) no-repeat;
 				line-height: 12px;
 				text-indent: 20px;
@@ -172,6 +183,7 @@
 				float: none;
 				margin: 0;
 			}
+			
 			.img_content span{
 				font-size: 14px ;
 				color: #699f00;
@@ -207,27 +219,160 @@
                 		<div class="b1">
 								<ul>
 									<li>
-										<img src="img/hzw.jpg" />
-										<div class="num_icon" style="background: #699f00;">1</div>
-										<div class="img_content">
+										<div class="list1">
+											<img src="img/hzw.jpg" />
+											<div class="num_icon" style="background: #699f00;">1</div>
+											<div class="img_content">
 											<a href="#">海贼王</a>
 											<p>2332万</p>
 											<span>节目简介></span>
+											</div>
+										</div>
+										<div class="list2">
+											<div class="num_icon"style="background: #699f00;">2</div>名侦探柯南<p>2332万</p>
 										</div>
 									</li>
-									<li><div class="num_icon"style="background: #699f00;">2</div>名侦探柯南<p>2332万</p></li>
-									<li><div class="num_icon"style="background: #699f00;">3</div>龙珠超<p>2332万</p></li>
-									<li><div class="num_icon">4</div>激战奇轮 第三部<p>2332万</p></li>
-									<li><div class="num_icon">5</div>名侦探柯南 国语版<p>2332万</p></li>
-									<li><div class="num_icon">6</div>成龙历险记<p>2332万</p></li>
-									<li><div class="num_icon">7</div>蜡笔小新<p>2332万</p></li>
-									<li><div class="num_icon">8</div>接的奥特曼<p>2332万</p></li>
-									<li><div class="num_icon">9</div>西游记<p>2332万</p></li>
-									<li><div class="num_icon">10</div>精灵梦叶萝莉 第五季<p>2332万</p></li>
+									<li>
+										<div class="list1">
+											<img src="img/hzw.jpg" />
+											<div class="num_icon" style="background: #699f00;">1</div>
+											<div class="img_content">
+											<a href="#">海贼王</a>
+											<p>2332万</p>
+											<span>节目简介></span>
+											</div>
+										</div>
+										<div class="list2">
+											<div class="num_icon"style="background: #699f00;">2</div>名侦探柯南<p>2332万</p>
+										</div>
+										</li>
+									<li>
+										<div class="list1">
+											<img src="img/hzw.jpg" />
+											<div class="num_icon" style="background: #699f00;">1</div>
+											<div class="img_content">
+											<a href="#">海贼王</a>
+											<p>2332万</p>
+											<span>节目简介></span>
+											</div>
+										</div>
+										<div class="list2">
+											<div class="num_icon"style="background: #699f00;">3</div>龙珠超<p>2332万</p>
+										</div>
+										</li>
+									<li>
+										<div class="list1">
+											<img src="img/hzw.jpg" />
+											<div class="num_icon" style="background: #699f00;">1</div>
+											<div class="img_content">
+											<a href="#">海贼王</a>
+											<p>2332万</p>
+											<span>节目简介></span>
+											</div>
+										</div>
+										<div class="list2">
+											<div class="num_icon">4</div>激战奇轮 第三部<p>2332万</p>
+										</div>
+										</li>
+									<li>
+										<div class="list1">
+											<img src="img/hzw.jpg" />
+											<div class="num_icon" style="background: #699f00;">1</div>
+											<div class="img_content">
+											<a href="#">海贼王</a>
+											<p>2332万</p>
+											<span>节目简介></span>
+											</div>
+										</div>
+										<div class="list2">
+											<div class="num_icon">5</div>名侦探柯南 国语版<p>2332万</p>
+										</div>
+										</li>
+									<li>
+										<div class="list1">
+											<img src="img/hzw.jpg" />
+											<div class="num_icon" style="background: #699f00;">1</div>
+											<div class="img_content">
+											<a href="#">海贼王</a>
+											<p>2332万</p>
+											<span>节目简介></span>
+											</div>
+										</div>
+										<div class="list2">
+											<div class="num_icon">6</div>成龙历险记<p>2332万</p>
+										</div>
+										</li>
+									<li>
+										<div class="list1">
+											<img src="img/hzw.jpg" />
+											<div class="num_icon" style="background: #699f00;">1</div>
+											<div class="img_content">
+											<a href="#">海贼王</a>
+											<p>2332万</p>
+											<span>节目简介></span>
+											</div>
+										</div>
+										<div class="list2">
+											<div class="num_icon">7</div>蜡笔小新<p>2332万</p>
+										</div>
+										</li>
+									<li>
+										<div class="list1">
+											<img src="img/hzw.jpg" />
+											<div class="num_icon" style="background: #699f00;">1</div>
+											<div class="img_content">
+											<a href="#">海贼王</a>
+											<p>2332万</p>
+											<span>节目简介></span>
+											</div>
+										</div>
+										<div class="list2">
+											<div class="num_icon">8</div>接的奥特曼<p>2332万</p>
+										</div>
+										</li>
+									<li>
+										<div class="list1">
+											<img src="img/hzw.jpg" />
+											<div class="num_icon" style="background: #699f00;">1</div>
+											<div class="img_content">
+											<a href="#">海贼王</a>
+											<p>2332万</p>
+											<span>节目简介></span>
+											</div>
+										</div>
+										<div class="list2">
+											<div class="num_icon">9</div>西游记<p>2332万</p>
+										</div>
+										</li>
+									<li>
+										<div class="list1">
+											<img src="img/hzw.jpg" />
+											<div class="num_icon" style="background: #699f00;">1</div>
+											<div class="img_content">
+											<a href="#">海贼王</a>
+											<p>2332万</p>
+											<span>节目简介></span>
+											</div>
+										</div>
+										<div class="list2">
+											<div class="num_icon">10</div>精灵梦叶萝莉 第五季<p>2332万</p>
+										</div>
+										</li>
 								</ul>
                 		</div>
                 	</div>
                 </div>
+                <script src="js/jquery-3.2.1.min.js"></script>
+                <script>
+                	$(".b1 li").mouseover(function(){
+                		$(this).children(".list1").show();
+                		$(this).siblings().children(".list1").hide();
+                		$(this).children(".list2").hide();
+                		$(this).siblings().children(".list2").show();
+                		$(this).css({'height': '100px',	'padding-top': '10px','padding-left': '10px','box-sizing': 'border-box'});
+                		$(this).siblings().css({'padding':'0','height':'40px'});
+                	})
+                </script>
 	</body>
 
 </html>
