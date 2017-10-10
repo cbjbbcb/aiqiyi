@@ -147,7 +147,7 @@
 	width: 260px;
 	height: 324px;
 	/*border: 1px solid red;*/
-	overflow: auto;
+	overflow-x:hidden;
 }
 
 .video_right_bottom h3 {
