@@ -1,0 +1,146 @@
+		.pinglun_container {
+			width: 880px;
+		}
+		
+		.pinglun_title {
+			font-size: 18px;
+			color: #333;
+		}
+		
+		.pinglun_title>span {
+			margin-left: 10px;
+			font-size: 14px;
+			color: #999;
+		}
+		
+		.pinglun_top {
+			margin-top: 10px;
+			border-top: 1px solid #EAEAEA;
+		}
+		
+		.pinglun_top div {
+			float: left;
+			margin: 10px 20px 10px 0;
+		}
+		
+		.pinglun_top a:hover {
+			color: #5AA700;
+		}
+		
+		.pinglun_top img {
+			height: 50px;
+			width: 50px;
+			border-radius: 50px;
+		}
+		
+		textarea {
+			width: 862px;
+			height: 118px;
+			border: 1px solid #EAEAEA;
+		}
+		
+		.send {
+			height: 30px;
+			width: 862px;
+			border: 1px solid #EAEAEA;
+			position: relative;
+			bottom: 4px;
+		}
+		
+		.send a {
+			float: right;
+			text-decoration: none;
+			display: inline-block;
+			text-align: center;
+			line-height: 26px;
+			width: 84px;
+			height: 26px;
+			border-radius: 3px;
+			font-size: 14px;
+		}
+		
+		.send a:first-child {
+			color: white;
+			background: #5aa700;
+			margin-right: 25px;
+		}
+		
+		.send a:last-child {
+			color: ;
+		}
+		
+		.chat {
+			width: 100%;
+			height: auto;
+		}
+		
+		.chat_left {
+			float: left;
+			width: 50px;
+			height: 100%;
+		}
+		
+		.chat_right {
+			float: left;
+			width: 800px;
+			height: 100%;
+		}
+		
+		.chat .chat_left>img {
+			height: 50px;
+			border-radius: 50px;
+		}
+		
+		.chat_right .user_name {
+			display: inline-block;
+			width: auto;
+			height: 19px;
+			color: #333;
+		}
+		
+		.chat_right a {
+			margin-left: 2px;
+			margin-right: 5px;
+		}
+		
+		.chat_right a:hover {
+			color: #57a900;
+		}
+		
+		.chat_right p {
+			margin: 15px;
+			width: 100%;
+			height: auto;
+			font-size: 14px;
+			color: #333;
+		}
+		
+		.chat_right .pinglun_time {
+			display: inline-block;
+			width: auto;
+			height: 16px;
+			margin-left: 10px;
+			color: #999;
+		}
+		
+		.chat_right i {
+			width: 17px;
+			height: 14px;
+			background-position: -20px -20px;
+			vertical-align: -2px;
+			display: inline-block;
+			background-image: url(//www.qiyipic.com/common/fix/paopao-landingPage/paopao-landingpage.png);
+			margin-right: 5px;
+		}
+		
+		.chat_right .pinglun_zan>i{
+			background-position: -40px -21px;
+		}
+		
+		.chat_right .pinglun_pinglun>i {
+			background-position: -60px -20px;
+		}
+		
+		.chat_right span {
+			color: #999;
+		}
