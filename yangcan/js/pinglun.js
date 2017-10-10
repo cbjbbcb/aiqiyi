@@ -18,7 +18,7 @@ function aaa() {
 		str += '<a href="javascript:;"class="pinglun_pinglun"><i></i>评论0</a>';
 		str += "</div></p></div></div>";
 		$(str).prependTo(".chatBody");
-
+$("textarea").val("");
 	}
 }
 
