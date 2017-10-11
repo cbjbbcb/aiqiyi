@@ -1,5 +1,8 @@
 .bgcolor {
 	background-color: #292929;
+	width: 100%;
+	min-width: 1200px;
+	height: auto;
 }
 
 .one_div {
@@ -142,12 +145,15 @@
 .video_right_top a {
 	text-decoration: none;
 }
-._scroll{
+
+._scroll {
 	position: relative;
 }
-._panel-box{
+
+._panel-box {
 	position: absolute;
 }
+
 .video_right_bottom {
 	width: 260px;
 	height: 324px;
@@ -222,7 +228,7 @@
 	font-size: 14px;
 }
 
-.a {
+.bgcolor .a {
 	width: 40px;
 	height: 28px;
 	position: absolute;
@@ -233,7 +239,7 @@
 	cursor: pointer;
 }
 
-.a1 {
+.bgcolor .a1 {
 	width: 40px;
 	height: 28px;
 	position: absolute;
@@ -244,7 +250,7 @@
 	cursor: pointer;
 }
 
-.b {
+.bgcolor .b {
 	color: #999;
 	font-size: 14px;
 	width: 43px;
@@ -259,7 +265,7 @@
 	cursor: pointer;
 }
 
-.c {
+.bgcolor .c {
 	width: 400px;
 	height: 28px;
 	position: absolute;
@@ -269,11 +275,11 @@
 	border: 0;
 }
 
-.b:hover {
+.bgcolor .b:hover {
 	color: #6CC900;
 }
 
-.d {
+.bgcolor .d {
 	width: 50px;
 	height: 28px;
 	position: absolute;
@@ -285,11 +291,11 @@
 	cursor: pointer;
 }
 
-.d:hover {
+.bgcolor .d:hover {
 	color: #6CC900;
 }
 
-.e {
+.bgcolor .e {
 	color: #999;
 	font-size: 14px;
 	position: absolute;
@@ -298,7 +304,7 @@
 	cursor: pointer;
 }
 
-.e:hover {
+.bgcolor .e:hover {
 	color: #6CC900;
 }
 
@@ -333,7 +339,7 @@
 	margin-left: 3px;
 }
 
-.f {
+.bgcolor .f {
 	width: 15px;
 	height: 22px;
 }
