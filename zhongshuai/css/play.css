@@ -148,8 +148,11 @@
 	height: 324px;
 	/*border: 1px solid red;*/
 	overflow: auto;
+	position: relative;
 }
-
+._panel-box{
+	position: absolute;
+}
 .video_right_bottom h3 {
 	font-size: 14px;
 	color: white;

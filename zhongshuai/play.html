@@ -51,8 +51,9 @@
 							</div>
 							<a href="javascript:void(0);" class="play_pay">5.0元购买本片&gt;</a>
 						</div>
-						<div class="video_right_bottom">
-							<h3>影视原声</h3>
+						<div class="video_right_bottom _scroll">
+							<div class="_panel-box">
+								<h3>影视原声</h3>
 							<div class="video_right_bottom_title">
 
 								<a href="http://www.iqiyi.com/v_19rra7wha4.html?vfrm=22_2_7_1" title="曾经守候 电影《你的名字》剪辑版" rseat="sound-title-0">
@@ -138,6 +139,7 @@
 									<img src="img/playIco0610_black.png" />
 									<span class="conts" title="播放">27.7万</span>
 								</p>
+							</div>
 							</div>
 						</div>
 					</div>
@@ -249,6 +251,7 @@
 			</div>
 		</div>
 		<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+		<script type="text/javascript" src="js/yi-scroll.js"></script>
 		<script type="text/javascript">
 			$(".ysjj").click(function() {
 				$(".wrapper_bottom").slideToggle("slow");
@@ -318,6 +321,16 @@
 				});
 				$(".list_control1 ul").hide();
 			})
+			$("._scroll").yi_scroll();		
+		$("._scroll-mh").yi_scroll({isMaxHeight:true,isBar:true});
+
+		$("#add").click(function(){
+			$("#c4-panel").append('<div class="ct-item"><div class="ci1">客户名称</div><div class="ci2">搜狗输入法</div></div>');
+		});
+
+		$("#remove").click(function(){
+			$("#c4-panel").find(".ct-item").last().remove();
+		});
 		</script>
 	</body>
 
