@@ -12,7 +12,7 @@
 	</head>
 
 	<body>
-		<div id="login_background">
+				<div id="login_background">
 			<div id="login">
 				<div class="login_top">
 					<div class="login_top_img"></div>
@@ -77,14 +77,13 @@
 									</select>
 								</div>
 								<div class="login_middle_3_top_right">
-
-									<input class="login_middle_3_input" type="text" />
-									<p>请输入手机号或邮箱</p>
+									<input class="login_middle_3_input" type="text" oninput="username()" />
+									<p>请输入手机号或邮箱</p><span style="color: red;"></span>
 								</div>
 							</div>
 							<div id="login_middle_3_middle">
-								<input type="password" class="login_middle_3_input" id="login_middle_3_password" onkeyup="submitColorChange(this)" />
-								<p>请输入密码</p>
+								<input type="password" class="login_middle_3_input" id="login_middle_3_password" oninput="onpassword();submitColorChange(this)" />
+								<p>请输入密码</p><span style="color: red;"></span>
 								<div id="login_middle_3_middle_change"></div>
 								<div class="login_middle_3_forget">
 									<a href="javascript:;">忘记密码</a>
@@ -113,8 +112,8 @@
 									</select>
 								</div>
 								<div class="login_middle_3_top_right">
-									<input class="login_middle_3_input" type="text" onkeyup="submitColorChange(this)" />
-									<p>请输入手机号</p>
+									<input class="login_middle_3_input" type="text" oninput="mobile();submitColorChange(this)" />
+									<p>请输入手机号</p><span style="color: red;"></span>
 								</div>
 							</div>
 							<div id="login_middle_4_bottom">

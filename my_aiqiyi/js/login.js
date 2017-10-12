@@ -50,12 +50,6 @@ function saoma() {
 	$("#login_zhanghao").show();
 
 }
-//			$("#login_saoma1").click(function() {
-//				saoma();
-//			})
-//			$("#login_saoma2").click(function() {
-//				saoma();
-//			})
 $("#login_saoma1,#login_saoma2").click(function() {
 	saoma();
 })
@@ -139,4 +133,88 @@ function submitColorChange(dom) {
 		$(dom).parent().parent().parent().find(":submit").css("background", "#BCDD98");
 	}
 
+}
+/*
+ * 正则部分
+ */
+$("form").submit(function() {
+	//区分注册和登陆
+	if($("#login_middle_3_middle:hidden").length > 0) {
+		//注册
+		//手机号判断
+		var phone = $(".login_middle_4 .login_middle_3_input").val().trim();
+		if(phone == "") {
+			$(".login_middle_4 .login_middle_3_input").next().next().text("手机号不能为空");
+			return false;
+		}
+		if(!/^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/.test(phone)) {
+			$(".login_middle_4 .login_middle_3_input").next().next().text("请输入正确的手机号");
+			return false;
+		}
+	} else {
+		//登陆
+		//账号判断
+		var user = $(".login_middle_3 .login_middle_3_input[type=text]").val().trim();
+		if(user == "") {
+			$(".login_middle_3 .login_middle_3_input[type=text]").next().next().text("账号不能为空");
+			return false;
+		}
+		if(!/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test(user) && !/^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/.test(user)) {
+			$(".login_middle_3 .login_middle_3_input[type=text]").next().next().text("请输入正确的账号");
+			return false;
+		}
+		//密码框判断
+		var pwd = $("#login_middle_3_password").val().trim();
+		if(pwd == "") {
+			$("#login_middle_3_password").next().next().text("密码不能为空");
+			return false;
+		}
+		if(!/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9a-zA-Z]{6,12}$/.test(pwd)) {
+			$("#login_middle_3_password").next().next().text("密码必须为6到12位的数字字母组合");
+			return false;
+		}
+
+	}
+})
+/*单独判断
+ * 
+ */
+//手机号
+function mobile() {
+	var phone = $(".login_middle_4 .login_middle_3_input").val().trim();
+	if(phone == "") {
+		$(".login_middle_4 .login_middle_3_input").next().next().text("手机号不能为空");
+		return false;
+	}
+	if(!/^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/.test(phone)) {
+		$(".login_middle_4 .login_middle_3_input").next().next().text("请输入正确的手机号");
+		return false;
+	}
+	$(".login_middle_4 .login_middle_3_input").next().next().text("");
+}
+//账号
+function username() {
+	var user = $(".login_middle_3 .login_middle_3_input[type=text]").val().trim();
+	if(user == "") {
+		$(".login_middle_3 .login_middle_3_input[type=text]").next().next().text("账号不能为空");
+		return false;
+	}
+	if(!/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test(user) && !/^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/.test(user)) {
+		$(".login_middle_3 .login_middle_3_input[type=text]").next().next().text("请输入正确的账号");
+		return false;
+	}
+	$(".login_middle_3 .login_middle_3_input[type=text]").next().next().text("");
+}
+//密码
+function onpassword() {
+		var pwd = $("#login_middle_3_password").val().trim();
+		if(pwd == "") {
+			$("#login_middle_3_password").next().next().text("密码不能为空");
+			return false;
+		}
+		if(!/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9a-zA-Z]{6,12}$/.test(pwd)) {
+			$("#login_middle_3_password").next().next().text("密码必须为6到12位的数字字母组合");
+			return false;
+		}
+		$("#login_middle_3_password").next().next().text("");
 }

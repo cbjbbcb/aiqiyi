@@ -249,7 +249,7 @@
 		bottom: 0px;
 		left: 4px;
 		margin: 0;
-		font-size: 16px
+		font-size: 16px;
 	}
 	
 	.login_middle_3_top_left {
@@ -281,8 +281,14 @@
 		position: absolute;
 		bottom: 0;
 		margin: 0;
+		font-size: 16px;
 	}
-	
+	#login_middle_3_middle span:first-of-type{
+		position: absolute;
+		bottom: -20px;
+		left: 0;
+		display: inline-block;
+	}
 	#login_middle_3_middle_change {
 		height: 30px;
 		width: 30px;
