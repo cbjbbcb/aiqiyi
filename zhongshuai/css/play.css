@@ -1,10 +1,9 @@
 .bgcolor {
 	background-color: #292929;
-	width: 100%;
-	min-width: 1200px;
-	height: auto;
 }
-
+.bgcolor *{
+	z-index: 100;
+}
 .one_div {
 	/*border: 1px solid red;*/
 	width: 1349px;
@@ -12,16 +11,17 @@
 	position: relative;
 }
 
-.video {
+.video1 {
 	width: 1180px;
-	height: 495px;
+	height: 542px;
 	/*border: 1px solid black;*/
 	background-color: #1F1F1F;
 }
 
 .video_left {
-	width: 880px;
-	height: 495px;
+	position: relative;
+	width: 870px;
+	height: 542px;
 	/*border: 1px solid black;*/
 	margin: 0;
 	display: inline-block;
@@ -145,15 +145,12 @@
 .video_right_top a {
 	text-decoration: none;
 }
-
-._scroll {
+._scroll{
 	position: relative;
 }
-
-._panel-box {
+._panel-box{
 	position: absolute;
 }
-
 .video_right_bottom {
 	width: 260px;
 	height: 324px;
@@ -215,42 +212,44 @@
 }
 
 .Barrage {
-	width: 1140px;
-	height: 33px;
+	width: 300px;
+	height: 46px;
 	/*border: 1px solid blueviolet;*/
-	padding: 13px 20px 0;
-	background-color: #1F1F1F;
+	/*padding: 13px 20px 0;*/
+	background-color: #292929;
 	position: relative;
+	margin: -46px 0 0 965px;
+	
 }
 
-.Barrage p {
+/*.Barrage p {
 	color: #666666;
 	font-size: 14px;
 }
 
-.bgcolor .a {
+.a {
 	width: 40px;
 	height: 28px;
 	position: absolute;
-	/*border: 1px solid blueviolet;*/
+	border: 1px solid blueviolet;
 	margin-top: -21px;
 	margin-left: 35px;
 	background: url(../img/site-icons-play.png) no-repeat 0 -60px;
 	cursor: pointer;
 }
 
-.bgcolor .a1 {
+.a1 {
 	width: 40px;
 	height: 28px;
 	position: absolute;
-	/*border: 1px solid blueviolet;*/
+	border: 1px solid blueviolet;
 	margin-top: -21px;
 	margin-left: 35px;
 	background: url(../img/site-icons-play.png) no-repeat -40px -60px;
 	cursor: pointer;
 }
 
-.bgcolor .b {
+.b {
 	color: #999;
 	font-size: 14px;
 	width: 43px;
@@ -265,7 +264,7 @@
 	cursor: pointer;
 }
 
-.bgcolor .c {
+.c {
 	width: 400px;
 	height: 28px;
 	position: absolute;
@@ -275,11 +274,11 @@
 	border: 0;
 }
 
-.bgcolor .b:hover {
+.b:hover {
 	color: #6CC900;
 }
 
-.bgcolor .d {
+.d {
 	width: 50px;
 	height: 28px;
 	position: absolute;
@@ -291,11 +290,11 @@
 	cursor: pointer;
 }
 
-.bgcolor .d:hover {
+.d:hover {
 	color: #6CC900;
 }
 
-.bgcolor .e {
+.e {
 	color: #999;
 	font-size: 14px;
 	position: absolute;
@@ -304,27 +303,31 @@
 	cursor: pointer;
 }
 
-.bgcolor .e:hover {
+.e:hover {
 	color: #6CC900;
-}
+}*/
 
 .zan {
 	list-style: none;
 	position: absolute;
-	margin-top: -20px;
-	margin-left: 875px;
-	width: auto;
-	height: 22px;
+	/*margin-top: -20px;
+	margin-left: 875px;*/
+	width: 300px;
+	height: 46px;
 }
-
+/*.zan a{
+	width: 51px;
+	height: 22px;
+	display: inline-block;
+}*/
 .zan li {
 	float: left;
 	width: 51px;
-	height: 22px;
-	line-height: 22px;
+	height: 46px;
+	line-height: 46px;
 	font-size: 12px;
 	color: #999;
-	margin-left: 20px;
+	margin-left: 22px;
 	position: relative;
 }
 
@@ -336,12 +339,14 @@
 	width: 31px;
 	height: 22px;
 	position: absolute;
-	margin-left: 3px;
+	left: 15px;
 }
 
-.bgcolor .f {
+.f {
 	width: 15px;
 	height: 22px;
+	position: absolute;
+	top: 10px;
 }
 
 .list_control {
@@ -361,7 +366,8 @@
 	line-height: 87px;
 	display: inline-block;
 	background-color: #313131;
-	margin-top: 145px;
+	margin-top: 147px;
+	border-radius: 3px;
 }
 
 .list_control1 {
@@ -369,7 +375,7 @@
 	height: 495px;
 	position: absolute;
 	top: 0;
-	left: 1115px;
+	left: 1263px;
 	font-size: 12px;
 }
 
@@ -382,6 +388,7 @@
 	color: #666666;
 	cursor: pointer;
 	display: none;
+	border-radius: 3px;
 }
 
 .list_control1 ul li {
@@ -428,7 +435,7 @@
 	position: absolute;
 	margin: -70px 980px;
 	background: url(img/app-download-0727-28048-black.gif) no-repeat 0 0;
-	z-index: 1;
+	z-index: 101 !important;
 }
 
 .ysjj {
