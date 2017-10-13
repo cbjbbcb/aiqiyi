@@ -632,6 +632,23 @@
 			$("#remove").click(function() {
 				$("#c4-panel").find(".ct-item").last().remove();
 			});
+				//中部
+			$(".b1 li").mouseover(function() {
+				$(this).children(".list1").show();
+				$(this).siblings().children(".list1").hide();
+				$(this).children(".list2").hide();
+				$(this).siblings().children(".list2").show();
+				$(this).css({
+					'height': '100px',
+					'padding-top': '10px',
+					'padding-left': '10px',
+					'box-sizing': 'border-box'
+				});
+				$(this).siblings().css({
+					'padding': '0',
+					'height': '40px'
+				});
+			})
 		</script>
 	</body>
 
